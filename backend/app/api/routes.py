@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.api.endpoints import auth, system, processes, storage, network, users, updates, logs
+from app.api.endpoints import auth, system, processes, storage, network, users, updates, logs, brew
 
 api_router = APIRouter()
 
@@ -15,3 +15,6 @@ api_router.include_router(network.router, prefix="/network", tags=["network"])
 api_router.include_router(users.router, prefix="/users", tags=["users"])
 api_router.include_router(updates.router, prefix="/updates", tags=["updates"])
 api_router.include_router(logs.router, prefix="/logs", tags=["logs"])
+
+# Homebrew routes
+api_router.include_router(brew.router, prefix="/brew", tags=["homebrew"])

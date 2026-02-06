@@ -16,6 +16,7 @@ import SoftwareUpdatePage from './pages/system/SoftwareUpdatePage'
 import LogsPage from './pages/system/LogsPage'
 import FileBrowserPage from './pages/tools/FileBrowserPage'
 import TerminalPage from './pages/tools/TerminalPage'
+import BrewManagerPage from './pages/tools/BrewManagerPage'
 import SettingsPage from './pages/settings/SettingsPage'
 
 import ProtectedRoute from './components/auth/ProtectedRoute'
@@ -56,6 +57,7 @@ function App() {
               
               <Route path="/tools/files" element={<FileBrowserPage />} />
               <Route path="/tools/terminal" element={<TerminalPage />} />
+              <Route path="/tools/brew" element={<BrewManagerPage />} />
               
               <Route path="/settings" element={<SettingsPage />} />
             </Route>

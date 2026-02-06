@@ -13,7 +13,8 @@ import {
   FolderOpen,
   Terminal,
   Settings,
-  Apple
+  Apple,
+  Package
 } from 'lucide-react'
 
 interface MenuSection {
@@ -48,6 +49,7 @@ const Sidebar: React.FC = () => {
       items: [
         { path: '/tools/files', label: t('navigation.files'), icon: <FolderOpen className="w-5 h-5" /> },
         { path: '/tools/terminal', label: t('navigation.terminal'), icon: <Terminal className="w-5 h-5" /> },
+        { path: '/tools/brew', label: 'Homebrew', icon: <Package className="w-5 h-5" /> },
       ]
     },
   ]
